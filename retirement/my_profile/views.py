@@ -3,12 +3,13 @@ from django.contrib.auth.decorators import login_required
 from . models import Profiles
 from . forms import ProfilesForm
 
-# Create your views here.
+# view profile
 @login_required
 def view_profile(request):
     profile = Profiles.objects.get(user=request.user)
     return render(request, 'profiles/profile.html', {'profile': profile})
 
+# edit profile
 @login_required
 def edit_profile(request):
     profile = Profiles.objects.get(user=request.user)
