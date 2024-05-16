@@ -16,3 +16,5 @@ Usage
 This is a platform where people who have retired with a similar profession come and share how they are coping with life. People might reach to others for help by asking for help and also encourage others.
 
 Contributing
+
+This project backend is developed with django framework sqlite(database).
