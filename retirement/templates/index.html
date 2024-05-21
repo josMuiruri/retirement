@@ -4,6 +4,80 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retirement</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+      }
+
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 1em 0;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 1em;
+      }
+
+      nav ul li a {
+        color: white;
+        text-align: center;
+      }
+
+      footer {
+        background-color: #4caf50;
+        color: white;
+        padding: 1em 0;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Retirement Platform</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="{% url 'register' %}">Register</a>
+          </li>
+          <li><a href="{% url 'login' %}">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Features</h2>
+      <ul>
+        <li>Here you will connect with others from your profession</li>
+        <li>You can share your stories and experiences</li>
+        <li>You will also get advices and support from peers</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Retirement Community. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
+<!--<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
     <style>
       body {
@@ -23,3 +97,4 @@
     <section></section>
   </body>
 </html>
+-->
